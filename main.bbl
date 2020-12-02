@@ -1,0 +1,52 @@
+\begin{thebibliography}{}
+
+\bibitem[Adhikari {\em et~al.}(2015)Adhikari, Bhattacharya, Cao, and
+  Cheng]{Adhikari2015-fl}
+Adhikari, B., Bhattacharya, D., Cao, R., and Cheng, J. (2015).
+\newblock {CONFOLD}: Residue-residue contact-guidedab initioprotein folding.
+
+\bibitem[Brunger(2007)Brunger]{Brunger2007-ut}
+Brunger, A.~T. (2007).
+\newblock Version 1.2 of the crystallography and {NMR} system.
+
+\bibitem[Br{\"u}nger {\em et~al.}(1998)Br{\"u}nger, Adams, Clore, DeLano, Gros,
+  Grosse-Kunstleve, Jiang, Kuszewski, Nilges, Pannu, Read, Rice, Simonson, and
+  Warren]{Brunger1998-ji}
+Br{\"u}nger, A.~T., Adams, P.~D., Clore, G.~M., DeLano, W.~L., Gros, P.,
+  Grosse-Kunstleve, R.~W., Jiang, J.~S., Kuszewski, J., Nilges, M., Pannu,
+  N.~S., Read, R.~J., Rice, L.~M., Simonson, T., and Warren, G.~L. (1998).
+\newblock Crystallography \& {NMR} system: A new software suite for
+  macromolecular structure determination.
+
+\bibitem[Kryshtafovych {\em et~al.}(2019)Kryshtafovych, Schwede, Topf, Fidelis,
+  and Moult]{Kryshtafovych2019-zb}
+Kryshtafovych, A., Schwede, T., Topf, M., Fidelis, K., and Moult, J. (2019).
+\newblock Critical assessment of methods of protein structure prediction
+  ({CASP)---Round} {XIII}.
+
+\bibitem[Lundstr{\"o}m {\em et~al.}(2008)Lundstr{\"o}m, Rychlewski, Bujnicki,
+  and Elofsson]{Lundstrom2008-wa}
+Lundstr{\"o}m, J., Rychlewski, L., Bujnicki, J., and Elofsson, A. (2008).
+\newblock Pcons: A neural-network-based consensus predictor that improves fold
+  recognition.
+
+\bibitem[Xu and Zhang(2010)Xu and Zhang]{Xu2010-vu}
+Xu, J. and Zhang, Y. (2010).
+\newblock How significant is a protein structure similarity with {TM-score} =
+  0.5?
+
+\bibitem[Yang {\em et~al.}(2020)Yang, Anishchenko, Park, Peng, Ovchinnikov, and
+  Baker]{Yang1496}
+Yang, J., Anishchenko, I., Park, H., Peng, Z., Ovchinnikov, S., and Baker, D.
+  (2020).
+\newblock Improved protein structure prediction using predicted interresidue
+  orientations.
+\newblock {\em Proceedings of the National Academy of Sciences\/}, {\bf
+  117}(3), 1496--1503.
+
+\bibitem[Zhang and Skolnick(2007)Zhang and Skolnick]{Zhang2007-xu}
+Zhang, Y. and Skolnick, J. (2007).
+\newblock Scoring function for automated assessment of protein structure
+  template quality.
+
+\end{thebibliography}
