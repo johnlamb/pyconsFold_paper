@@ -1,17 +1,15 @@
 \documentclass{bioinfo}
 \copyrightyear{2020} \pubyear{2020}
-% \usepackage{graphicx}
-% \usepackage{hyperref}
 \access{Advance Access Publication Date: Day Month Year}
-\appnotes{Application Note}
+\appnotes{Original Paper}
 
 \begin{document}
 \firstpage{1}
 
-% \subtitle{Subject Section}
+\subtitle{Structural bioinformatics}
 
-\title[short Title]{pyconsFold: Ab initio modelling and docking using distance contact predictions}
-\author[Sample \textit{et~al}.]{Lamb, J\,$^{\text{\sfb 1,2}}$, Elofsson, A\,$^{\text{\sfb 1,2}*}$}
+\title[pyconsFold]{pyconsFold: Modelling and docking using distance contact predictions.}
+\author{Lamb, J\,$^{\text{\sfb 1,2}}$, Elofsson, A\,$^{\text{\sfb 1,2}*}$}
 \address{$^{\text{\sf 1}}$ Science for Life Laboratory, Stockholm University, SE-171 21 Solna, Sweden\\
 $^{\text{\sf 2}}$Department of Biochemistry and Biophysics, Stockholm University, SE-106 91 Stockholm, Sweden}
 
@@ -21,25 +19,29 @@ $^{\text{\sf 2}}$Department of Biochemistry and Biophysics, Stockholm University
 
 \editor{Associate Editor: XXXXXXX}
 
-\abstract{\textbf{Summary:} Contact predictions within a protein are most commonly used in tertiary model prediction of protein structure. Using predicted distance distributions has been shown in many cases to be superior to only using a binary contact annotation, either in contact or not.
-pyconsFold builds on the CNS NMR modelling program \cite{Brunger1998-ji,Brunger2007-ut} to use contact predictions as restraints for use in modelling. It builds on the popular CONFOLD-perl \cite{Adhikari2015-fl} script and is rewritten in python both with ease of install, reproducibility and longevity in mind. The package also includes utilities for handling distance predictions from trRosetta \cite{Yang1496} and Quality Assessment tools together with a new novel way of using predicted interprotein contacts to dock two separate protein chains. In contrast to most other folding protocols in use today that uses different approaches of deep learning, pyconsFold builds around the CNS NMR system that is mainly used to fold proteins from NMR spectroscopy data and where the full folding of predicted contacts is the same as the folding when using experimental data.\\
-\textbf{Availability and implementation:} pyconsFold is implemented in Python 3 with a strong focus on using as few dependencies as possible for longevity. It is available both as a pip package in Python 3 and as source code on \href{https://github.com/johnlamb/pyconsfold}{github} and is published under the Gnu GPL v3 license.\\
+\abstract{\textbf{Motivation:} Contact predictions within a protein has recently become a viable method for accurate prediction of protein structure. Using predicted distance distributions has been shown in many cases to be superior to only using a binary contact annotation. Using predicted inter protein distances has also been shown to be able to dock protein chains.\\ 
+\textbf{Results:} Here we present pyconsFold. Using CNS as its underlying folding mechanism and predicted contact distance it outperforms regular contact prediction based modelling on our dataset of 210 proteins. It performs marginally lower than the state of the art pyRosetta folding pipeline but is on average about 20 times faster per model. pyconsFold also has a new novel way of using predicted inter protein contacts to simultaneously fold and dock two protein chains.\\
+\textbf{Availability and implementation} pyconsFold is implemented in Python 3 with a strong focus on using as few dependencies as possible for longevity. It is available both as a pip package in Python 3 and as source code on \href{https://github.com/johnlamb/pyconsfold}{GitHub} and is published under the  GPLv3 license.\\
 \textbf{Contact:} \href{arne@bioinfo.se}{arne@bioinfo.se}\\
-\textbf{Supplementary information:} The full source code together with further documentation and examples are available from \href{https://github}{https://github.com/johnlamb/pyconsfold}.}
+\textbf{Supplementary information:} The full source code and documentation are available from \href{https://github}{https://github.com/johnlamb/pyconsfold}.}
 
 \maketitle
 
-\section{pyconsFold}
-Protein modelling has long relied on contact predictions that have been presented in binary format, two residues are either in contact (within 8Å) or not. More and more methods are now leveraging full contact distance predictions and this shows (CASP13 \cite{Kryshtafovych2019-zb,Yang1496}) a higher accuracy of the models than if binary contacts were used. 
-CONFOLD is a wrapper around CNS that uses predicted binary contacts together with predicted secondary structure to model proteins. pyconsFold is a reimplementation and extension of CONFOLD that achieves better results using distance predictions and that also expands to allow for more geometric restraints, such as angles predicted by tools such as trRosetta and for fast iteration of models and parameters.
+\section{Introduction}
+De novo protein modelling has recently seen significant improvements by relying on contact predictions that have been presented in binary format, two residues are either in contact (within 8Å) or not. By running mathematical models such as DCA on multiple seqeunce alignments we can extract possible contacts based on coevolutionary information and when these contacts are filtered using image recognition inspired deep learning we get good enough quality of the contacts to use for structure prediction. In the last few years we have again seen a significant improvement in structure prediction by using predicted distances between residues instead of just contacts(CASP13 \cite{Kryshtafovych2019-zb,Yang1496}). Historically, classifications has been easier to achieve (contact or not) in ,achine learning than regression but new advances, particularly in deep learning architecture, has now shown that these new methods can produce distances that results in better models than using just regular binary contacts.
 
+CONFOLD\cite{Adhikari2015-fl} is a wrapper around CNS \cite{Brunger1998-ji,Brunger2007-ut} that uses predicted binary contacts together with predicted secondary structure to model proteins. pyconsFold is a re-implementation and extension of CONFOLD that achieves better results using distance predictions and that also expands to allow for more geometric restraints, such as angles predicted by tools such as trRosetta \cite{Yang1496}.
+
+\section{Implementation}
+pyconsFold is implemented in pyhon 3 as a wrapper around the CNS system used for folding proteins from NMR experimental data. It leverages CNS underlying power by converting predicted distances into geometric restraints. CNS ability to handle multiple chains are also leveraged to achieve the modelling and docking of complexes at the same time by using both inter and intra chain predicted contacts.\\
+pyconsFold mainly runs in one stage as previous work \cite{Michel2017} has shown that running two stages only give marginal gains to the TM-score but more than doubles the run time.
 pyconsFold has three major modes:
 
 \subsection{Contact based modelling}
-Contact based modelling works by treating contacts as an upper limit to distances. CONFOLD style modelling can be replicated using this mode with contact prediction and secondary structure prediction as input and setting the gaps parameter to 5(only use contacts that are at least 5 residues away from each other).
+Contact based modelling or legacy modelling treats all contacts as binary contacts, they are in contact within 8Å. This mode can simulate CONFOLD by also including secondary structure prediction and setting the gaps parameter to 5, meaning only contacts separated by at least 5 residues will be used. In this mode it is most common to use a numbers threshold for how many contacts to use by the convetion of a multiple of protein length, eg 1.5L would mean to use 1.5 times the protein length number of contacts.
 
 \subsection{Distance based modelling}
-Distance based modelling works similar to classical modelling but in this case, an extra column is expected in the CASP-contacts file which defines the standard error for the predicted distance of the contact. By default this mode includes contacts within 5 residues from each other and does not require a secondary structure file. Benchmark has even shown that this mode does not produce better models with a secondary structure file.
+Distance based modelling works similar to classical modelling but in this case, an extra column is expected in the CASP-contacts file which defines the standard error for the predicted distance of the contact. By default this mode also includes contacts within 5 residues from each other and does not require a secondary structure file. Benchmark has even shown that this mode does not produce better models with a secondary structure file.
 
 \subsection{Docking modelling}
 Docking modelling uses CNSs underlying ability to model two protein chains simultaneously. A contact prediction file of both inter and intra contacts needs to be supplied. This can be achieved by running alignment tools for the two chains separately, concatenating these files horizontally and then treating this resulting alignment as one chain and using any contact prediction method to predict contacts. This contact file together with the original fasta files are used as inputs and models the full binary complex.
@@ -52,10 +54,11 @@ Docking modelling uses CNSs underlying ability to model two protein chains simul
 
 \section{Additional features}
 For ease of use and reproducibility we have included several extra features and utilities. By default the generated models are ranked by CNS internal NOE energy but Quality Assessment score from pcons \cite{Lundstrom2008-wa} will also be calculated. If a native structure is known and supplied with the tmscore\_pdb\_file argument, the tmscore \cite{Zhang2007-xu,Xu2010-vu} for each model against the native structure will be calculated. 
-Compiled versions of both pcons and TMscore for unix based x64 systems are packaged together with pyconsFold under the open source Boost license. If your system does not support the built in versions, you can manually install them on your system and as long as they are in your path, wil be chosen instead of the built in binaries.
-l
+Compiled versions of both pcons and TMscore for unix based x64 systems are packaged together with pyconsFold under the open source Boost license. If your system does not support the built in versions, you can manually install them on your system and as long as they are in your path, will be chosen instead of the built in binaries.
 
-\section{Conclusion}
+\section{Docking}
+
+\section{Discussion}
 pyconsFold offers a complete toolkit for ab initio modelling using predicted contact distances and angles. Its focus is on ease of use and reproducibility and is available both as source on github and as an easily installable pip package in Python 3. It comes packaged with QA-programs to rank the generated models and allows transparency for many tweakable parameters for the underlying CNS-system. It also offers a docking protocol where predicted inter chain contacts are used as restraints for docking. It offers a significant increase in accuracy over contact based protocols by using predicted distances. It is also around 20 times faster than pyRosetta per model.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -70,8 +73,8 @@ This work was supported by grants from
 the Swedish Research Council (VR-NT 2016-03798 to A.E.),
 National Science Centre (No. 2012/07/E/NZ1/01900 to J.I.S. and
 No. 2018/29/N/NZ2/02897 to A.I.J.).
-  \subsection*{Conflict of Interest Statement}
-  None delared.
+\subsection*{Conflict of Interest Statement}
+None delared.
 
 % \bibliographystyle{unsrt}
 \bibliographystyle{natbib}
@@ -85,3 +88,4 @@ No. 2018/29/N/NZ2/02897 to A.I.J.).
 \bibliography{references.bib}
 
 \end{document}
+

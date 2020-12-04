@@ -30,6 +30,13 @@ Lundstr{\"o}m, J., Rychlewski, L., Bujnicki, J., and Elofsson, A. (2008).
 \newblock Pcons: A neural-network-based consensus predictor that improves fold
   recognition.
 
+\bibitem[Michel {\em et~al.}(2017)Michel, Hurtado, Uziela, and
+  Elofsson]{Michel2017}
+Michel, M., Hurtado, D.~M., Uziela, K., and Elofsson, A. (2017).
+\newblock Large-scale structure prediction by improved contact predictions and
+  model quality assessment.
+\newblock {\em Bioinformatics\/}, {\bf 33}(14), i23--i29.
+
 \bibitem[Xu and Zhang(2010)Xu and Zhang]{Xu2010-vu}
 Xu, J. and Zhang, Y. (2010).
 \newblock How significant is a protein structure similarity with {TM-score} =

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.2)  2 DEC 2020 18:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.2)  4 DEC 2020 09:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -333,22 +333,22 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -372,8 +372,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for LY1+phv on input line 3
-0.
+LaTeX Font Info:    Trying to load font information for LY1+phv on input line 2
+8.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/ly1/ly1phv.fd
 File: ly1phv.fd 2001/02/01 scalable font definitions for LY1/phv using Berry na
@@ -409,20 +409,20 @@ f>
 (epstopdf)                    size: 9259 bytes
 (epstopdf)             Command: <repstopdf --outfile=OUP_First_SBk_Bot_8401-eps
 -converted-to.pdf OUP_First_SBk_Bot_8401.eps>
-(epstopdf)             \includegraphics on input line 30.
+(epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 <OUP_First_SBk_Bot_8401-eps-converted-to.pdf, id=1, 54.2025pt x 54.2025pt>
 File: OUP_First_SBk_Bot_8401-eps-converted-to.pdf Graphic file (type pdf)
 <use OUP_First_SBk_Bot_8401-eps-converted-to.pdf>
 Package pdftex.def Info: OUP_First_SBk_Bot_8401-eps-converted-to.pdf  used on i
-nput line 30.
+nput line 28.
 (pdftex.def)             Requested size: 54.20236pt x 54.20236pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 
  (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -430,45 +430,49 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 30.
+(Font)              size <6> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 30.
+(Font)              size <6> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 30.
+(Font)              size <6> substituted on input line 28.
 
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 30.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 28.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.5> not available
-(Font)              size <8> substituted on input line 30.
+(Font)              size <8> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.25> not available
-(Font)              size <5> substituted on input line 30.
+(Font)              size <5> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <8.5> not available
-(Font)              size <8> substituted on input line 30.
+(Font)              size <8> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.25> not available
-(Font)              size <5> substituted on input line 30.
+(Font)              size <5> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <8.5> not available
-(Font)              size <8> substituted on input line 30.
+(Font)              size <8> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.25> not available
-(Font)              size <5> substituted on input line 30.
+(Font)              size <5> substituted on input line 28.
 
-LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <9> not available
-(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 30.
 
-Underfull \hbox (badness 10000) detected at line 30
+Underfull \hbox (badness 5939) in paragraph at lines 28--28
+\LY1/phv/b/n/9 Supplementary information: \LY1/phv/m/n/9 The full source code a
+nd documentation are available from
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
 []
  []
 
@@ -488,34 +492,80 @@ Overfull \hbox (1.12001pt too wide) has occurred while \output is active
 
 
  <./OUP_First_SBk_Bot_8401-eps-converted-to.pdf>]
-<pyconsFold_figure.png, id=20, 505.89pt x 361.35pt>
+<pyconsFold_figure.png, id=19, 505.89pt x 361.35pt>
 File: pyconsFold_figure.png Graphic file (type png)
 <use pyconsFold_figure.png>
-Package pdftex.def Info: pyconsFold_figure.png  used on input line 49.
+Package pdftex.def Info: pyconsFold_figure.png  used on input line 51.
 (pdftex.def)             Requested size: 234.0pt x 167.14381pt.
 LaTeX Font Info:    Trying to load font information for LY1+phb on input line 5
-0.
-LaTeX Font Info:    No file LY1phb.fd. on input line 50.
+2.
+LaTeX Font Info:    No file LY1phb.fd. on input line 52.
 
 
 LaTeX Font Warning: Font shape `LY1/phb/m/n' undefined
-(Font)              using `LY1/ptm/m/n' instead on input line 50.
+(Font)              using `LY1/ptm/m/n' instead on input line 52.
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 69--73
+Underfull \hbox (badness 2173) in paragraph at lines 72--76
 \LY1/ptm/m/n/8 This work was supported by grants from the Swedish Research
  []
 
 (./main.bbl)
-Extra height:0.0pt when 466.52715pt
-(2)Left:466.52715pt Right:466.0pt Output:466.52715pt
+Extra height:19.0pt when 626.89514pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:19.0pt when 627.89514pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:19.0pt when 628.89514pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:19.0pt when 629.89514pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:19.0pt when 630.89514pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:19.0pt when 631.89514pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:19.0pt when 632.89514pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:19.0pt when 633.89514pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:19.0pt when 634.89514pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:19.0pt when 635.89514pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:0.0pt when 636.89514pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:636.89514pt Right:636.736pt Output:636.89514pt
 - LAST -
 Extra skip:0.0pt
-Left:466.52715pt
-Right:466.0pt
-Output:466.52715pt
+Left:636.89514pt
+Right:636.736pt
+Output:636.89514pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <8> not available
-(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 87.
+(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 90.
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
@@ -531,13 +581,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 3543 strings out of 480608
- 43505 string characters out of 5903630
- 293517 words of memory out of 5000000
- 19363 multiletter control sequences out of 15000+600000
- 582194 words of font info for 104 fonts, out of 8000000 for 9000
+ 3547 strings out of 480608
+ 43556 string characters out of 5903630
+ 301314 words of memory out of 5000000
+ 19367 multiletter control sequences out of 15000+600000
+ 586861 words of font info for 108 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 39i,10n,35p,882b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,35p,1049b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/lo
 cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></us
 r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/
@@ -549,7 +599,7 @@ ist/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/local/texlive/2020/texmf-dist/f
 onts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on main.pdf (2 pages, 145329 bytes).
+Output written on main.pdf (2 pages, 150160 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
